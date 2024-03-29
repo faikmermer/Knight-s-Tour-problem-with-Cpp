@@ -1,2 +1,2 @@
 # Knight's Tour problem with C++
- Without heuristics and without backtracking 
+ Availability heuristic and without backtracking 
