@@ -47,13 +47,8 @@ void knightsTour(std::array<std::array<int, santracSize>, santracSize> &santranc
 
 			currentRow = startPointRow + vertical[ran1];
 			currentCol = startPointCol + horizontal[ran2];
-			
-			if(currentRow < 0)
-			    currentRow *= -1;
-		    if(currentCol < 0)
-			    currentCol *= -1;
 		
-		    if(santranc[currentRow][currentCol] != 0 || currentRow >= 8 || currentCol >= 8){
+		    if(santranc[currentRow][currentCol] != 0 || currentRow >= 8 || currentCol >= 8 || currentRow < 0 || currentCol < 0 ){
 			    continue;
 			}else{
 			    santranc[currentRow ][currentCol] = ++moveNumber;
